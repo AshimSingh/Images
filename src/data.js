@@ -21,15 +21,24 @@ const Data = ()=>{
     
     useEffect(()=>{
         fetchimage()
+        
+        //Easy Method to fetch data
+        // try {
+        //     fetch(url)
+        //     .then((resp)=>{
+        //         return resp.json()
+        //     })
+        //     .then((user)=>{
+        //         setImageList(user)
+        //         setIsLoading(false)
+        //     })
+        // } catch (error) {
+        //     console.log(error)
+        // }
+
+
+        
     },[])
-    // return(
-    //     <>
-    //         <h1>Hello World</h1>
-    //         {
-    //             // console.log(imageList)
-    //         }
-    //     </>
-    // )
     if(isLoading){
         return(
             <main>
